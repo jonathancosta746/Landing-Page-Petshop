@@ -3,47 +3,48 @@
 html, body {
     margin: 0px;
     padding: 0px;
-    border:0px;
+    border: 0px;
+}
+
+a {
+    text-decoration: none;
 }
 
 header {
     display: flex;
     flex-direction: row;
-    gap: 20px;
     font-family: rubik;
-    padding: 20px;
+    padding-left: 50px;
+    padding-top: 20px;
     gap: 20px;
-    color: #3C184E;
+    color: #3C184E;}
 
-
-}
-
-.logo {
-    width: 24px;
-    min-height: 24px;
-    min-height: 24px;
-    max-width: 24px;    
+header .logo {
+    width: 33px;   
+    height: 33px;
+    align-self: center;
+    padding-left: 3px;
 }
 
 main {
     display: flex;
-    flex-direction: columns;
-    padding-left: 20px;
-    padding-right: 0px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
     color: #3C184E;
     flex-wrap: wrap;
-    
-
 }
 
-
-
-.titulo-imagem {
+main .titulo-imagem {
     margin-top:0px;
 }
 
+main .conteudo-esquerda {
+    padding: 50px;    
+}
 
-.titulo {
+
+main .conteudo-esquerda .titulo {
     font-family: Merriweather, serif;
     color: #3C184E;
     font-weight: 900 bold;
@@ -53,7 +54,7 @@ main {
 }
 
 
-.chamada{
+main .chamada{
     font-family: rubik;
     color: #3C184E;
     font-weight: 400;
@@ -61,47 +62,63 @@ main {
     
 }
 
-.botao1{
+main .btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
     font-family: rubik;
     color: #ffffff;
     background-color: #713FFF;
-    width: 160px;
+    width: 230px;
     height: 45px;
     border: none;
     border-radius: 40px;
     font-weight: 400;
-    font-size: 16px;
-    
+    font-size: 16px;    
 }
 
-.botao1:hover {
+
+
+main .btn:hover {
     background-color: #a98aff;}
 
-.botao2{
-        font-family: rubik;
-        color: #000000;
-        background-color: #ffffff;
-        width: 180px;
-        height: 50px;
-        margin: 20px;
-        border: none;
-        border-radius: 40px;
-        font-weight: 400;
-        font-size: 16px;
+
+aside .image{
+    width: 500px;
+    padding: 30px;
+    justify-content: center;
+}
+
+/*=========MEDIA QUERIES (DISPOSITIVOS PEQUENOS) ==========*/
+@media screen and (max-width:600px){
+    header {
+        justify-content: center;
+        padding: 0;
+        padding-top: 15px;
+
+    }
+    
+    main .conteudo-esquerda .titulo {
+        margin-top: 0px;
+        font-size: 35px;
+}
+
+    main .btn{
         
+        margin-left: auto;
+        margin-right: auto;
 }
 
-.botao2:hover {
-    background-color: rgba(235, 214, 255, 0.53);}
+    main .conteudo-esquerda{
+        padding-bottom: 0px;
+    }
 
-.imagem{ /*transformou todas imagens em um item*/
-    display: block;
-    max-width: 700px;
-    margin: 0px;
-    padding: -20px;
-    border-width: 0px;
-    float: right;
-    
-    
+    aside .image{
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 50px;
+    }
 }
-
