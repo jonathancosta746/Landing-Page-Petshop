@@ -1,8 +1,6 @@
-
-
 # Landing Page para Petshop
 
-🇧🇷
+
 ## Como visualizar o projeto?
 Através do link https://jonathancosta746.github.io/Landing-Page-Petshop/
 
@@ -12,15 +10,6 @@ O Projeto é uma Landing Page criada para PetShop, onde a página é dividida em
 ## Tecnologias Usadas
 HTML e CSS
 
-🇺🇸
-## How to view the project?
-It's avaliable on https://jonathancosta746.github.io/Landing-Page-Petshop/
-
-## How does the project work?
-The Project is a Landing Page created for a PetShop, where the page is divided in two areas, one dedicated to the text with a contact button, and right area to the image of the business
-
-## Technologies 
-HTML and CSS
 
 ##
 
